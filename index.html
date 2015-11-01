@@ -11,7 +11,7 @@
           var params = n.split('&');
           params.forEach(function(e) {
             e = e.split('=');
-            if(e[0] === "code") {
+            if(e[0] === "code" || e[0] === "error") {
               target.innerHTML = e[1];
             }
           });
